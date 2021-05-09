@@ -6,7 +6,7 @@
  $database="3aHzSEcVNr";
  $user="3aHzSEcVNr";
  $password="vRZDMF62hM";
- $connection = mysqli_connect("Driver={SQL Server Native Client 10.0};Server=$serverName;Database=$database;", $user, $password);
+ $connection = mysqli_connect("Server=$serverName;Database=$database;", $user, $password);
 
  if(isset($_POST['register']))
  {
