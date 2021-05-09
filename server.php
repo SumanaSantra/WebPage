@@ -2,11 +2,11 @@
 
  session_start();
  $errors=array();
- $serverName="DESKTOP-BEUEN6Q\SQLEXPRESS01";
- $database="Login_Page";
- $user="mydatabase";
- $password="root123";
- $connection = odbc_connect("Driver={SQL Server Native Client 10.0};Server=$serverName;Database=$database;", $user, $password);
+ $serverName="remotemysql.com";
+ $database="3aHzSEcVNr";
+ $user="3aHzSEcVNr";
+ $password="vRZDMF62hM";
+ $connection = mysqli_connect("Driver={SQL Server Native Client 10.0};Server=$serverName;Database=$database;", $user, $password);
 
  if(isset($_POST['register']))
  {
@@ -36,7 +36,7 @@
    {
      $password=md5($password_1);
      $sql="INSERT INTO lg (username,email,password) VALUES ('$username','$email','$password')";
-     $st=odbc_exec($connection,$sql);
+     $st=mysqli_query($connection,$sql);
 
      $_SESSION['username'] = $username;
      $_SESSION['success'] = " Logged In";
