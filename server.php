@@ -6,7 +6,7 @@
  $database="Login_Page";
  $user="mydatabase";
  $password="root123";
- $connection = odbc_connect("Driver={ODBC Driver 17 for SQL Server};Server=$serverName;Database=$database;", $user, $password);
+ $connection = odbc_connect("Driver={SQL Server Native Client 10.0};Server=$serverName;Database=$database;", $user, $password);
 
  if(isset($_POST['register']))
  {
