@@ -35,7 +35,7 @@
    if(count($errors)== 0)
    {
      $password=md5($password_1);
-     $sql="INSERT INTO signin (username,email,password) VALUES ('$username','$email','$password')";
+     $sql="INSERT INTO lg (username,email,password) VALUES ('$username','$email','$password')";
      $st=odbc_exec($connection,$sql);
 
      $_SESSION['username'] = $username;
