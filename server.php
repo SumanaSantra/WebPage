@@ -40,7 +40,7 @@
 
      $_SESSION['username'] = $username;
      $_SESSION['success'] = " Logged In";
-     header('location: index.php');
+     header('location: index1.php');
 
    }
  }
