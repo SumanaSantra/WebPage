@@ -10,7 +10,7 @@
     <h2>Register</h2>
   </div>
 
-  <form method="post" action="form.php">
+  <form method="post" action="index.php">
    <?php include('error.php'); ?>
     <div class="input-group">
       <label>Username</label>
